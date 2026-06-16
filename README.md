@@ -24,7 +24,7 @@ Displays all purchasable farmlands in a dedicated ESC menu tab — sorted by net
 ## Compatibility
 
 - ✅ Farming Simulator 25
-- ✅ [BetterContracts](https://www.farming-simulator.com/mod.php?lang=en&country=us&mod_id=295798) — discounts shown when installed and enabled
+- ✅ https://github.com/Mmtrx/FS25_BetterContracts — discounts shown when installed and enabled
 - ✅ Multiplayer — clients see `Host only` for discounts
 - ✅ All maps
 
