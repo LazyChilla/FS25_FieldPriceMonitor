@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<GUI name="ingameMenuFPM">
+    <GuiElement profile="fs25_menuContainer">
+
+        <GuiElement profile="fs25_menuHeaderPanel">
+            <Bitmap profile="fs25_menuHeaderIconBg">
+                <Bitmap profile="fpmMenuHeaderIcon" id="fpmHeaderIcon"/>
+            </Bitmap>
+            <Text profile="fs25_menuHeaderTitle" id="categoryHeaderText" text="$l10n_ui_fpm_title"/>
+
+            <!-- Kontostand oben rechts - exakt nach STT Pattern -->
+            <RoundCorner profile="fs25_shopMoneyBoxBg"/>
+            <BoxLayout profile="fs25_shopMoneyBox">
+                <Text profile="fs25_shopBalance" text="$l10n_ui_balance:"/>
+                <Text profile="fs25_shopMoney" id="fpmBalance"/>
+            </BoxLayout>
+        </GuiElement>
+
+        <!-- Header -->
+        <GuiElement profile="fs25_statisticsHeaderBox">
+            <Button profile="fpmHeaderBtnRight" position="0px 0px"    size="55px 32px"   text="$l10n_ui_fpm_colId"       onClick="onClickSortId"/>
+            <Button profile="fpmHeaderBtnRight" position="65px 0px"   size="110px 32px"  text="$l10n_ui_fpm_colArea"      onClick="onClickSortArea"/>
+            <Button profile="fpmHeaderBtnRight" position="185px 0px"  size="160px 32px"  text="$l10n_ui_fpm_colPrice"     onClick="onClickSortPrice"/>
+            <Button profile="fpmHeaderBtnRight" position="355px 0px"  size="200px 32px"  text="$l10n_ui_fpm_colDiscount"  onClick="onClickSortDiscount"/>
+            <Button profile="fpmHeaderBtnRight" position="565px 0px"  size="160px 32px"  text="$l10n_ui_fpm_colNet"       onClick="onClickSortNet"/>
+            <Button profile="fpmHeaderBtn"      position="775px 0px"  size="130px 32px"  text="$l10n_ui_fpm_colFruit"     onClick="onClickSortFruit"/>
+            <Button profile="fpmHeaderBtn"      position="915px 0px"  size="220px 32px"  text="$l10n_ui_fpm_colState"     onClick="onClickSortState"/>
+            <Button profile="fpmHeaderBtn"      position="1145px 0px" size="215px 32px"  text="$l10n_ui_fpm_colOwner"     onClick="onClickSortOwner"/>
+            <ThreePartBitmap profile="fs25_lineSeparatorBottom" position="0px -2dp"/>
+        </GuiElement>
+
+        <!-- Liste -->
+        <SmoothList profile="fpmList" id="priceTable">
+            <ListItem profile="fpmListItem" name="rowTemplate">
+                <Text profile="fpmCellRight" position="0px 0px"    size="55px 36px"   name="cellId"/>
+                <Text profile="fpmCellRight" position="65px 0px"   size="110px 36px"  name="cellArea"/>
+                <Text profile="fpmCellRight" position="185px 0px"  size="160px 36px"  name="cellPrice"/>
+                <Text profile="fpmCellRight" position="355px 0px"  size="200px 36px"  name="cellDiscount"/>
+                <Text profile="fpmCellNet"   position="565px 0px"  size="160px 36px"  name="cellNet"/>
+                <Text profile="fpmCellLeft"  position="775px 0px"  size="130px 36px"  name="cellFruit"  textLayoutMode="scrolling"/>
+                <Text profile="fpmCellLeft"  position="915px 0px"  size="220px 36px"  name="cellState"  textLayoutMode="scrolling"/>
+                <Text profile="fpmCellLeft"  position="1145px 0px" size="215px 36px"  name="cellOwner"  textLayoutMode="scrolling"/>
+            </ListItem>
+        </SmoothList>
+
+    </GuiElement>
+</GUI>

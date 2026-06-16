@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+    <texts>
+        <text name="ui_fpm_title"       text="PREÇOS DE TERRENOS"/>
+        <text name="ui_fpm_colId"       text="Nº"/>
+        <text name="ui_fpm_colArea"     text="Área"/>
+        <text name="ui_fpm_colPrice"    text="Preço de compra"/>
+        <text name="ui_fpm_colDiscount" text="Desconto"/>
+        <text name="ui_fpm_colNet"      text="Preço líquido"/>
+        <text name="ui_fpm_colState"    text="Estado"/>
+        <text name="ui_fpm_colFruit"    text="Cultura"/>
+        <text name="ui_fpm_colOwner"    text="Proprietário"/>
+        <text name="ui_fpm_ownerFree"   text="Livre"/>
+        <text name="ui_fpm_ownerYou"    text="Você"/>
+        <text name="ui_fpm_btnWarp"     text="Ir ao campo"/>
+        <text name="ui_fpm_gt_plowed"         text="Arado"/>
+        <text name="ui_fpm_gt_cultivated"     text="Cultivado"/>
+        <text name="ui_fpm_gt_seedbed"        text="Canteiro"/>
+        <text name="ui_fpm_gt_rolledSeedbed"  text="Compactado"/>
+        <text name="ui_fpm_gt_stubble"        text="Restolho"/>
+        <text name="ui_fpm_gt_grassCut"       text="Erva cortada"/>
+        <text name="ui_fpm_gt_harvestReady"   text="Pronto para colher"/>
+    </texts>
+</l10n>

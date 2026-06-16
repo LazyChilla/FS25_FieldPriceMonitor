@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+    <texts>
+        <text name="ui_fpm_title"       text="GRUNDSTÜCK PREISE"/>
+        <text name="ui_fpm_colId"       text="Nr."/>
+        <text name="ui_fpm_colArea"     text="Fläche"/>
+        <text name="ui_fpm_colPrice"    text="Kaufpreis"/>
+        <text name="ui_fpm_colDiscount" text="Rabatt"/>
+        <text name="ui_fpm_colNet"      text="Nettopreis"/>
+        <text name="ui_fpm_colState"    text="Zustand"/>
+        <text name="ui_fpm_colFruit"    text="Frucht"/>
+        <text name="ui_fpm_colOwner"    text="Besitzer"/>
+        <text name="ui_fpm_ownerFree"   text="Frei"/>
+        <text name="ui_fpm_ownerYou"    text="Ich"/>
+        <text name="ui_fpm_btnWarp"     text="Zum Feld"/>
+        <text name="ui_fpm_gt_plowed"         text="Gepflügt"/>
+        <text name="ui_fpm_gt_cultivated"     text="Gegrubbert"/>
+        <text name="ui_fpm_gt_seedbed"        text="Saatbett"/>
+        <text name="ui_fpm_gt_rolledSeedbed"  text="Geeggt"/>
+        <text name="ui_fpm_gt_stubble"        text="Stoppel"/>
+        <text name="ui_fpm_gt_grassCut"       text="Gras gemäht"/>
+        <text name="ui_fpm_gt_harvestReady"   text="Erntereif"/>
+    </texts>
+</l10n>

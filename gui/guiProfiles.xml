@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<GUIProfiles>
+
+    <!-- Tab-Icon: wird per Lua gesetzt, hier nur Größe/Position -->
+    <Profile name="fpmMenuHeaderIcon" extends="baseReference" with="anchorMiddleCenter">
+        <size value="50px 50px"/>
+        <imageSliceId value="gui.icon_ingameMenu_prices"/>
+        <imageColor value="$preset_fs25_colorMainDark"/>
+    </Profile>
+
+    <!-- Header-Buttons rechts (Zahlen) -->
+    <Profile name="fpmHeaderBtnRight" extends="baseReference">
+        <imageColor value="0 0 0 0"/>
+        <textFocusedColor value="$preset_fs25_colorMainHighlight"/>
+        <textHighlightedColor value="$preset_fs25_colorMainHighlight"/>
+        <textSize value="15px"/>
+        <textBold value="true"/>
+        <textUpperCase value="true"/>
+        <textColor value="$preset_colorWhite_50"/>
+        <textAlignment value="right"/>
+        <textDisabledColor value="$preset_colorDisabled"/>
+    </Profile>
+
+    <!-- Header-Buttons links (Text) -->
+    <Profile name="fpmHeaderBtn" extends="fpmHeaderBtnRight">
+        <textAlignment value="left"/>
+    </Profile>
+
+    <!-- Liste -->
+    <Profile name="fpmList" extends="emptyPanel" with="anchorStretchingYLeft pivotTopLeft">
+        <position value="0px -40px"/>
+        <absoluteSizeOffset value="0px 80px"/>
+    </Profile>
+
+    <!-- Listenzeile -->
+    <Profile name="fpmListItem" extends="baseReference" with="anchorTopStretchingX alternating">
+        <height value="36px"/>
+        <imageColor value="$preset_fs25_colorGrey"/>
+        <imageSelectedColor value="$preset_fs25_colorMainHighlight"/>
+        <alternateBackgroundColor value="$preset_fs25_colorGreyDark_50"/>
+    </Profile>
+
+    <!-- Zelle rechts -->
+    <Profile name="fpmCellRight" extends="baseReference" with="anchorStretchingYLeft">
+        <textBold value="false"/>
+        <textSize value="15px"/>
+        <textAlignment value="right"/>
+        <textColor value="$preset_fs25_colorMainLight"/>
+        <textSelectedColor value="$preset_fs25_colorMainDark"/>
+        <textDisabledColor value="$preset_colorDisabled"/>
+    </Profile>
+
+    <!-- Zelle links -->
+    <Profile name="fpmCellLeft" extends="fpmCellRight">
+        <textAlignment value="left"/>
+    </Profile>
+
+    <!-- Nettopreis: fett + größer -->
+    <Profile name="fpmCellNet" extends="fpmCellRight">
+        <textBold value="true"/>
+        <textSize value="17px"/>
+        <textColor value="0.3 0.92 0.3 1"/>
+        <textSelectedColor value="$preset_fs25_colorMainDark"/>
+    </Profile>
+
+</GUIProfiles>

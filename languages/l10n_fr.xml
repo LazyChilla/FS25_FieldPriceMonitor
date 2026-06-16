@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+    <texts>
+        <text name="ui_fpm_title"       text="PRIX DES PARCELLES"/>
+        <text name="ui_fpm_colId"       text="N°"/>
+        <text name="ui_fpm_colArea"     text="Surface"/>
+        <text name="ui_fpm_colPrice"    text="Prix d'achat"/>
+        <text name="ui_fpm_colDiscount" text="Remise"/>
+        <text name="ui_fpm_colNet"      text="Prix net"/>
+        <text name="ui_fpm_colState"    text="État"/>
+        <text name="ui_fpm_colFruit"    text="Culture"/>
+        <text name="ui_fpm_colOwner"    text="Propriétaire"/>
+        <text name="ui_fpm_ownerFree"   text="Libre"/>
+        <text name="ui_fpm_ownerYou"    text="Vous"/>
+        <text name="ui_fpm_btnWarp"     text="Aller au champ"/>
+        <text name="ui_fpm_gt_plowed"         text="Labouré"/>
+        <text name="ui_fpm_gt_cultivated"     text="Cultivé"/>
+        <text name="ui_fpm_gt_seedbed"        text="Lit de semence"/>
+        <text name="ui_fpm_gt_rolledSeedbed"  text="Roulé"/>
+        <text name="ui_fpm_gt_stubble"        text="Chaume"/>
+        <text name="ui_fpm_gt_grassCut"       text="Herbe fauchée"/>
+        <text name="ui_fpm_gt_harvestReady"   text="Prêt à récolter"/>
+    </texts>
+</l10n>

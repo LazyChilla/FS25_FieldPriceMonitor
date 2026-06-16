@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+    <texts>
+        <text name="ui_fpm_title"       text="LAND PRICES"/>
+        <text name="ui_fpm_colId"       text="No."/>
+        <text name="ui_fpm_colArea"     text="Area"/>
+        <text name="ui_fpm_colPrice"    text="Buy Price"/>
+        <text name="ui_fpm_colDiscount" text="Discount"/>
+        <text name="ui_fpm_colNet"      text="Net Price"/>
+        <text name="ui_fpm_colState"    text="State"/>
+        <text name="ui_fpm_colFruit"    text="Fruit"/>
+        <text name="ui_fpm_colOwner"    text="Owner"/>
+        <text name="ui_fpm_ownerFree"   text="Free"/>
+        <text name="ui_fpm_ownerYou"    text="You"/>
+        <text name="ui_fpm_btnWarp"     text="Go to Field"/>
+        <text name="ui_fpm_gt_plowed"         text="Plowed"/>
+        <text name="ui_fpm_gt_cultivated"     text="Cultivated"/>
+        <text name="ui_fpm_gt_seedbed"        text="Seedbed"/>
+        <text name="ui_fpm_gt_rolledSeedbed"  text="Rolled Seedbed"/>
+        <text name="ui_fpm_gt_stubble"        text="Stubble"/>
+        <text name="ui_fpm_gt_grassCut"       text="Grass Cut"/>
+        <text name="ui_fpm_gt_harvestReady"   text="Harvest Ready"/>
+    </texts>
+</l10n>
