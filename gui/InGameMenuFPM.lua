@@ -65,6 +65,10 @@ end
 function InGameMenuFPM:onFrameOpen()
     InGameMenuFPM:superClass().onFrameOpen(self)
 
+    print("[FPM-DIAG] onFrameOpen: self = " .. tostring(self)
+        .. "  (InGameMenuFPM.instance = " .. tostring(InGameMenuFPM.instance)
+        .. "  gleich? " .. tostring(self == InGameMenuFPM.instance) .. ")")
+
     -- Icon via imageSliceId im Profil gesetzt (kein Lua nötig)
 
     -- Cache zurücksetzen damit BC-Status immer frisch gelesen wird
@@ -214,6 +218,9 @@ function InGameMenuFPM:getGrowthInfo(x, z, field)
         local groundLabel = "—"
         if field ~= nil then
             local ok, state = pcall(field.getFieldState, field)
+            if not ok then
+                print("[FPM] Fehler in getFieldState: " .. tostring(state))
+            end
             if ok and state ~= nil then
                 state:update(x, z)
                 local gt = state.groundType
@@ -261,35 +268,35 @@ function InGameMenuFPM:getGrowthInfo(x, z, field)
     local stateText, stateColor, sortKey
 
     if growthState == ft.cutState then
-        stateText  = "Abgeerntet"
-        stateColor = {0.8, 0.5, 0.2, 1}
+        stateText  = g_i18n:getText("ui_fpm_gt_harvested")
+        stateColor = {1.0, 0.6, 0.1, 1}
         sortKey    = 70
     elseif growthState >= withered then
         -- Überreif/Vertrocknet - alles ÜBER maxHarvest
-        stateText  = "Vertrocknet"
-        stateColor = {0.8, 0.2, 0.2, 1}
+        stateText  = g_i18n:getText("ui_fpm_gt_withered")
+        stateColor = {1.0, 0.2, 0.2, 1}
         sortKey    = 60
     elseif growthState > 0 and growthState <= maxGrowing then
-        stateText  = string.format("Im Wachstum (%d/%d)", growthState, maxHarvest)
-        stateColor = {0.75, 0.75, 0.75, 1}
+        stateText  = string.format(g_i18n:getText("ui_fpm_gt_growing"), growthState, maxHarvest)
+        stateColor = {0.85, 0.85, 0.85, 1}
         sortKey    = growthState
     elseif ft.minPreparingGrowthState ~= nil
         and ft.minPreparingGrowthState >= 0
         and ft.minPreparingGrowthState <= growthState
         and growthState <= (ft.maxPreparingGrowthState or 0) then
-        stateText  = string.format("Im Wachstum (%d/%d)", growthState, maxHarvest)
-        stateColor = {0.75, 0.75, 0.75, 1}
+        stateText  = string.format(g_i18n:getText("ui_fpm_gt_growing"), growthState, maxHarvest)
+        stateColor = {0.85, 0.85, 0.85, 1}
         sortKey    = growthState
     elseif minHarvest <= growthState and growthState <= maxHarvest then
         -- Erntreif!
-        stateText = string.format("Erntreif (%d/%d)", growthState, maxHarvest)
+        stateText = string.format(g_i18n:getText("ui_fpm_gt_harvestNow"), growthState, maxHarvest)
         stateColor = growthState >= maxHarvest
             and {0.3, 0.92, 0.3, 1} or {1.0, 1.0, 0.2, 1}
         sortKey = 51 + growthState
     else
         -- Fallback
         stateText  = string.format("(%d/%d)", growthState, maxHarvest)
-        stateColor = {0.6, 0.6, 0.6, 1}
+        stateColor = {0.75, 0.75, 0.75, 1}
         sortKey    = growthState
     end
 
@@ -452,14 +459,14 @@ function InGameMenuFPM:populateCellForItemInSection(list, section, index, cell)
     if d.discStatus == "host" then
         -- MP-Client: Rabatt nur auf Host bekannt
         if d.hasNpc then
-            discCell:setText("nur Host")
+            discCell:setText(g_i18n:getText("ui_fpm_disc_hostOnly"))
         else
             discCell:setText("—")
         end
         discCell:setTextColor(0.5, 0.5, 0.5, 0.5)
     elseif d.discStatus == "no data" then
         if d.hasNpc then
-            discCell:setText("no data")
+            discCell:setText(g_i18n:getText("ui_fpm_disc_noData"))
         else
             discCell:setText("—")
         end
