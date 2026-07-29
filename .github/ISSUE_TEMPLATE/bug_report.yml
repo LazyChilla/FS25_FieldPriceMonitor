@@ -1,0 +1,127 @@
+name: "🐛 Fehler melden / Report a bug"
+description: "Etwas funktioniert nicht wie erwartet. / Something does not work as expected."
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Danke, dass du dir die Mühe machst!**
+
+        Ohne die `log.txt` kann dir niemand helfen — sie ist das Wichtigste hier.
+        Du findest sie unter:
+        `Dokumente\My Games\FarmingSimulator2025\log.txt`
+
+        Bilder einfach in ein Textfeld ziehen, GitHub lädt sie automatisch hoch.
+
+        ---
+
+        **Thanks for taking the time!**
+
+        Without the `log.txt` nobody can help you — it is the most important part here.
+        You will find it at:
+        `Documents\My Games\FarmingSimulator2025\log.txt`
+
+        Drag images straight into a text field, GitHub uploads them automatically.
+
+  - type: input
+    id: modversion
+    attributes:
+      label: "Mod-Version / Mod version"
+      description: "Steht in der modDesc oder im Spiel bei den Mods. / Shown in the modDesc or in the in-game mod list."
+      placeholder: "1.0.0.2"
+    validations:
+      required: true
+
+  - type: input
+    id: gameversion
+    attributes:
+      label: "FS25-Version / FS25 version"
+      description: "Steht im Hauptmenü unten. / Shown at the bottom of the main menu."
+      placeholder: "1.x.x.x"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: mode
+    attributes:
+      label: "Spielmodus / Game mode"
+      options:
+        - "Singleplayer"
+        - "Multiplayer — als Host / as host"
+        - "Multiplayer — als Mitspieler / as client"
+    validations:
+      required: true
+
+  - type: input
+    id: bettercontracts
+    attributes:
+      label: "BetterContracts installiert? / BetterContracts installed?"
+      description: "Ja/Nein und Version, falls installiert. / Yes/No and version, if installed."
+      placeholder: "Ja, v1.x.x.x"
+
+  - type: textarea
+    id: what_happened
+    attributes:
+      label: "Was ist passiert? / What happened?"
+      description: "Kurz und in eigenen Worten. / Briefly, in your own words."
+      placeholder: "Der Rabatt wird nicht angezeigt, obwohl BetterContracts aktiv ist …"
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Was hättest du erwartet? / What did you expect?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Wie kann man es nachstellen? / How can it be reproduced?"
+      description: "Schritt für Schritt — je genauer, desto schneller ist es gefunden. / Step by step — the more precise, the faster it gets fixed."
+      placeholder: |
+        1. ESC-Menü öffnen, FieldPriceMonitor-Tab anklicken
+        2. Feld XY auswählen
+        3. Rabattspalte zeigt 0% an, obwohl BetterContracts einen Rabatt vorsieht
+    validations:
+      required: true
+
+  - type: textarea
+    id: log
+    attributes:
+      label: "log.txt"
+      description: "Die Datei hier hereinziehen — oder den Inhalt einfügen. Bitte die GANZE Datei, nicht nur den Fehler. / Drag the file in here, or paste its content. Please the WHOLE file, not just the error."
+      render: shell
+    validations:
+      required: true
+
+  - type: input
+    id: map
+    attributes:
+      label: "Karte / Map"
+      placeholder: "z.B. NF Marsch / e.g. NF Marsch"
+
+  - type: textarea
+    id: other_mods
+    attributes:
+      label: "Andere Mods, die mitreden könnten / Other mods that might interfere"
+      description: "Vor allem alles rund um Feldkauf, BetterContracts oder FarmCore-Integrationen. / Especially anything related to field purchases, BetterContracts or FarmCore integrations."
+      placeholder: "FS25_FarmAssistant, FS25_BetterContracts …"
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: "Bilder / Screenshots"
+      description: "Einfach hier hereinziehen. / Just drag them in here."
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: "Kurz gegengeprüft / Quick checks"
+      options:
+        - label: "Ich habe die neueste Version des Mods installiert. / I am using the latest version of the mod."
+          required: true
+        - label: "Ich habe das FieldPriceMonitor-Tab im ESC-Menü mindestens einmal geöffnet. / I have opened the FieldPriceMonitor tab in the ESC menu at least once."
+          required: false

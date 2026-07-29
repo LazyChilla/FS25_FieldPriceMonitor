@@ -1,0 +1,40 @@
+name: "💡 Wunsch / Idea"
+description: "Eine Idee, was der Mod noch können sollte. / An idea for something the mod should do."
+title: "[Wunsch] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ideen sind willkommen — auch kleine.
+
+        Zwei Bitten: Beschreib bitte, **was du eigentlich erreichen willst**,
+        nicht nur, welchen Knopf du dir wünschst. Oft gibt es einen einfacheren
+        Weg zum selben Ziel. Und: Es ist ein Hobby-Mod, es kann dauern.
+
+        ---
+
+        Ideas are welcome — small ones too.
+
+        Two requests: please describe **what you are actually trying to achieve**,
+        not just which button you want. There is often a simpler route to the same
+        goal. And: this is a hobby mod, it may take a while.
+
+  - type: textarea
+    id: goal
+    attributes:
+      label: "Was möchtest du erreichen? / What do you want to achieve?"
+      placeholder: "Ich will beim Feldkauf schneller erkennen, welches Feld gerade den besten Rabatt hat …"
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: "Wie stellst du dir das vor? / How do you imagine it?"
+
+  - type: textarea
+    id: context
+    attributes:
+      label: "Kennst du einen Mod, der das schon so macht? / Do you know a mod that already does this?"
+      description: "Link oder Name reicht — das hilft enorm beim Einschätzen. / A link or name is enough — it helps a lot to judge the effort."
