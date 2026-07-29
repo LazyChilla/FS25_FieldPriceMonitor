@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<modDesc descVersion="109">
+<modDesc descVersion="110">
     <author>LazyChilla</author>
-    <version>1.0.0.0</version>
+    <version>1.0.0.2</version>
     <title>
         <en>Field Price Monitor</en>
         <de>Grundstück Preise</de>
@@ -19,7 +19,11 @@ crop type, field condition and owner.
 Sortable by any column. Includes warp-to-field button.
 
 Compatible with BetterContracts.
-Multiplayer supported (discounts shown on host only).]]></en>
+Multiplayer supported (discounts shown on host only).
+
+SUPPORT: Please report bugs and ideas via GitHub only, always with your log.txt:
+https://github.com/LazyChilla/FS25_FieldPriceMonitor/issues
+Without the log.txt nobody can help. No support via comments on download sites.]]></en>
         <de><![CDATA[Zeigt alle kaufbaren Grundstücke in einem ESC-Menü Tab.
 
 Angezeigt: Kaufpreis, BetterContracts-Rabatt, Nettopreis,
@@ -28,7 +32,11 @@ Fruchtart, Feldzustand und Besitzer.
 Nach jeder Spalte sortierbar. Mit Warp-zum-Feld Funktion.
 
 Kompatibel mit BetterContracts.
-Multiplayer unterstützt (Rabatte nur auf dem Host).]]></de>
+Multiplayer unterstützt (Rabatte nur auf dem Host).
+
+SUPPORT: Fehler und Wuensche bitte ausschliesslich ueber GitHub melden, immer mit log.txt:
+https://github.com/LazyChilla/FS25_FieldPriceMonitor/issues
+Ohne log.txt kann niemand helfen. Kein Support ueber Kommentare auf Download-Seiten.]]></de>
         <fr><![CDATA[Affiche toutes les parcelles achetables dans un onglet du menu ESC.
 
 Affiche: prix d'achat, remise BetterContracts, prix net,
@@ -37,7 +45,10 @@ type de culture, état du champ et propriétaire.
 Triable par colonne. Inclut un bouton téléportation vers le champ.
 
 Compatible avec BetterContracts.
-Multijoueur supporté (remises visibles uniquement sur l'hôte).]]></fr>
+Multijoueur supporté (remises visibles uniquement sur l'hôte).
+
+SUPPORT : merci de signaler les bugs et les idees uniquement via GitHub, toujours avec le log.txt :
+https://github.com/LazyChilla/FS25_FieldPriceMonitor/issues]]></fr>
         <pt><![CDATA[Exibe todos os terrenos compráveis numa aba do menu ESC.
 
 Mostra: preço de compra, desconto BetterContracts, preço líquido,
@@ -46,7 +57,10 @@ tipo de cultura, estado do campo e proprietário.
 Ordenável por qualquer coluna. Inclui botão de teletransporte para o campo.
 
 Compatível com BetterContracts.
-Multijogador suportado (descontos visíveis apenas no host).]]></pt>
+Multijogador suportado (descontos visíveis apenas no host).
+
+SUPORTE: comunique erros e ideias apenas atraves do GitHub, sempre com o log.txt:
+https://github.com/LazyChilla/FS25_FieldPriceMonitor/issues]]></pt>
         <es><![CDATA[Muestra todas las parcelas comprables en una pestaña del menú ESC.
 
 Muestra: precio de compra, descuento BetterContracts, precio neto,
@@ -55,7 +69,10 @@ tipo de cultivo, estado del campo y propietario.
 Ordenable por cualquier columna. Incluye botón de teletransporte al campo.
 
 Compatible con BetterContracts.
-Multijugador compatible (descuentos visibles solo en el host).]]></es>
+Multijugador compatible (descuentos visibles solo en el host).
+
+SOPORTE: informe de errores e ideas unicamente a traves de GitHub, siempre con el log.txt:
+https://github.com/LazyChilla/FS25_FieldPriceMonitor/issues]]></es>
         <it><![CDATA[Mostra tutti i terreni acquistabili in una scheda del menu ESC.
 
 Mostra: prezzo d'acquisto, sconto BetterContracts, prezzo netto,
@@ -64,9 +81,12 @@ tipo di coltura, stato del campo e proprietario.
 Ordinabile per qualsiasi colonna. Include pulsante teletrasporto al campo.
 
 Compatibile con BetterContracts.
-Multiplayer supportato (sconti visibili solo sull'host).]]></it>
+Multiplayer supportato (sconti visibili solo sull'host).
+
+SUPPORTO: segnalare errori e idee solo tramite GitHub, sempre con il log.txt:
+https://github.com/LazyChilla/FS25_FieldPriceMonitor/issues]]></it>
     </description>
-    <iconFilename>images/modIcon.png</iconFilename>
+    <iconFilename>images/modIcon.dds</iconFilename>
     <multiplayer supported="true"/>
     <l10n filenamePrefix="languages/l10n"/>
     <extraSourceFiles>
