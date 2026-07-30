@@ -1,3 +1,5 @@
+<p align="center"><img src="images/preview.png" width="480" alt="FS25 Field Price Monitor"></p>
+
 # FS25 Field Price Monitor 🌾💰
 
 **A Farming Simulator 25 mod by [LazyChilla](https://github.com/lazychilla)**
